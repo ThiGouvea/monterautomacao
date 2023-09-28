@@ -91,3 +91,7 @@ body {
 .icone__imagem {
     width: 2rem;
 }
+
+.icone__imagem:hover {
+    transform: scale(1.75);
+}
