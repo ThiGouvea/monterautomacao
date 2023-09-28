@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
 
 :root {
     --branco-principal: #FFFFFF;
     --cinza-secundario: #C0C0C0;
     --botao-azul:       #167BF7;
     --cor-de-fundo:     #000000;
-    --fonte-principal:  'Inter';
+    --fonte-principal:  'montserrat';
     --botao-azul-efeito:#3c92fa;
 }
 
@@ -23,20 +24,42 @@ body {
 }
 
 .principal {
-    background-image: url("img/LogoTrans.png"); 
+    background-image: url("base/fundo.png"); 
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     align-items: center;
-    text-align: center;
-    margin: 20px;
+    margin-top: 0;
 }
  
 .container {
-    height: 70vh;
-    display: flex;
+    height: 100vh;
+    display: block;
     color: var(--cinza-secundario);
     grid-template-columns: 50% 50%;
     align-items: center;
+}
+
+.container__imagem {
+    max-width: 40%;
+    min-width: 20%;
+    margin: 4em 0 1em 0;
+}
+
+.container__titulo {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    text-align: center;
+    font-size: 5.5rem;
+    font-weight: 800;
+    color: var(--branco-principal)
+}
+
+.container__texto {
+    margin-top: 0em;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--branco-principal);
 }
 
 .container__botao {
@@ -59,19 +82,9 @@ body {
     color: var(--cinza-secundario);
 }
 
-.container__titulo {
-    margin-top: 1em;
-    text-align: center;
-    font-size: 28px;
-    font-weight: 400;
-}
-
-.container__imagem {
-    margin: 1em 0 2em 0;
-}
-
 .container__caixa {
     margin: 2em 4em;
+    text-align: center;
 }
 
 .secundario__imagem {
@@ -91,7 +104,7 @@ body {
 }
 
 .descricao__texto {
-    color: var(--cinza-secundario);
+    color: #FFF;
 }
 
 .secundario__botao {
